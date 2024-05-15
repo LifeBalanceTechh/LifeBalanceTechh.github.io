@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<header>
+    <img src="gym.JPEG" alt="Logo de Vida Salud" style="width: 200px; height: 200px; margin-right: 10px;">
+</header>
+<nav>
+    <a href="#Consejos Ejercicio">Consejos de Ejercicio</a> 
+    <a href="#Recetas">Recetas Saludables</a> 
+    <a href="#Articulos">Artículos de Salud</a> 
+    <a href="#Galeria">Galería</a> 
+    <a href="#Videos">Videos</a> 
+    <a href="#Calculadora">Calculadora de Calorías</a> 
+    <a href="#Contacto">Contacto</a> 
+</nav>
+<section id="Consejos Ejercicio">
+    <h2>Consejos de Ejercicio</h2>
+    <p>Aquí puedes encontrar consejos sobre ejercicios específicos, rutinas de entrenamiento o ejercicios para diferentes objetivos.</p>
+</section>
+<section id="Recetas">
+    <h2>Recetas Saludables</h2>
+    <p>Descubre recetas saludables y nutritivas para mantenerte en forma y saludable.</p>
+</section>
+<section id="Articulos">
+    <h2>Artículos de Salud</h2>
+    <p>Lee nuestros artículos sobre temas de salud relevantes para llevar un estilo de vida saludable.</p>
+</section>
+<section id="Galeria">
+    <h2>Galería</h2>
+    <p>Disfruta de imágenes inspiradoras relacionadas con el estilo de vida saludable.</p>
+</section>
+<section id="Videos">
+    <h2>Videos</h2>
+    <p>Ve nuestros videos educativos sobre salud, ejercicio y bienestar.</p>
+</section>
+<section id="Calculadora">
+    <h2>Calculadora de Calorías</h2>
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura" placeholder="Altura en centímetros" required><br><br>
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" placeholder="Peso en kilogramos" required><br><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" placeholder="Edad en años" required><br><br>
+    <label for="actividad">Actividad Física:</label>
+    <select id="actividad">
+        <option value="1.2">Sedentario (poco o ningún ejercicio)</option>
+        <option value="1.375">Ligera (ejercicio ligero/débil 1-3 días/semana)</option>
+        <option value="1.55">Moderada (ejercicio moderado 3-5 días/semana)</option>
+        <option value="1.725">Activo (ejercicio fuerte 6-7 días/semana)</option>
+        <option value="1.9">Muy activo (ejercicio muy fuerte, trabajo físico diario o ejercicio dos veces al día)</option>
+    </select><br><br>
+    <label for="objetivo">Objetivo:</label>
+    <select id="objetivo">
+        <option value="perder">Perder Peso</option>
+        <option value="mantener">Mantener Peso</option>
+        <option value="subir">Subir Peso</option>
+    </select><br><br>
+    <button id="calcular">Calcular Calorías</button><br><br>
+    <p id="resultado"></p>
+</section>
+<section id="Contacto">
+    <h2>Contacto</h2>
+    <p>38340000000000000000000000000000000000000000</p>
+</section>
+<footer>
+    <p>&copy; 2024 Vida Saludable. Todos los derechos reservados.</p>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function calcularCalorias() {
+        var altura = parseFloat(document.getElementById('altura').value);
+        var peso = parseFloat(document.getElementById('peso').value);
+        var edad = parseInt(document.getElementById('edad').value);
+        var actividad = parseFloat(document.getElementById('actividad').value);
+        var objetivo = document.getElementById('objetivo').value;
+
+        if (
+</script>
+</body>
+</html>
