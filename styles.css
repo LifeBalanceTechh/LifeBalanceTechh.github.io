@@ -2,8 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #333333;
 }
 
 header {
@@ -14,11 +13,10 @@ header {
 }
 
 nav {
-    background-color: #999999; animation: reverse;
+    background-color: #999999; 
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-right: px;
 }
 
 section {
@@ -30,20 +28,22 @@ section {
 }
 
 footer {
-    background-color: #0,0,0,0;
-    color: #black;
+    background-color: transparent;
+    color: #000;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 #Calculadora {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #ooo;
 }
 
 #Calculadora label {
@@ -66,5 +66,25 @@ footer {
 }
 
 #Calculadora button:hover {
+    background-color: #5ca9e0;
+}
+#resultados {
+    margin-top: 20px;
+    text-align: center;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #6eb5e8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
     background-color: #5ca9e0;
 }
