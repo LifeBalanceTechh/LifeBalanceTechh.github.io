@@ -1,28 +1,44 @@
 document.addEventListener('DOMContentLoaded', function() {
     var button = document.getElementById('calcular');
-    button.addEventListener('click', calcularCalorias);
+    if(button){
+        button.addEventListener('click', calcularCalorias);
+    }
 
     var scrollToTopButton = document.querySelector('.scroll-to-top');
-    scrollToTopButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if(scrollToTopButton){
+        scrollToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });223
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
-            scrollToTopButton.classList.add('show');
-        } else {
-            scrollToTopButton.classList.remove('show');
-        }
-    });
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
-            scrollToTopButton.style.display = 'block';
-        } else {
-            scrollToTopButton.style.display = 'none';
-        }
+    }
+
+    if(scrollToTopButton){
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollToTopButton.classList.add('show');
+            } else {
+                scrollToTopButton.classList.remove('show');
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+    }
+
+    document.querySelectorAll('#Articulos a').forEach(function(enlace) {
+        enlace.addEventListener('click', function(evento) {
+            evento.preventDefault(); // Evita que el enlace se abra normalmente
+            var url = this.getAttribute('data-link');
+            window.open(url, '_blank'); // Abre la URL en una nueva pestaña
+        });
     });
 });
 
@@ -57,12 +73,3 @@ function calcularCalorias() {
         resultadoElement.appendChild(mensajeError);
     }
 }
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('#Articulos a').forEach(function(enlace) {
-        enlace.addEventListener('click', function(evento) {
-            evento.preventDefault(); // Evita que el enlace se abra normalmente
-            var url = this.getAttribute('data-link');
-            window.open(url, '_blank'); // Abre la URL en una nueva pestaña
-        });
-    });
-});
