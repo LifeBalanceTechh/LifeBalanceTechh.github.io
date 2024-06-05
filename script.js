@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 0,
             behavior: 'smooth'
         });
-    });
+    });223
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
             scrollToTopButton.classList.add('show');
@@ -57,3 +57,12 @@ function calcularCalorias() {
         resultadoElement.appendChild(mensajeError);
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('#Articulos a').forEach(function(enlace) {
+        enlace.addEventListener('click', function(evento) {
+            evento.preventDefault(); // Evita que el enlace se abra normalmente
+            var url = this.getAttribute('data-link');
+            window.open(url, '_blank'); // Abre la URL en una nueva pestaña
+        });
+    });
+});
