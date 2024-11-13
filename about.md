@@ -11,3 +11,4 @@ Primer repositorio creado en esta cuenta
 ![](https://github.com/LifeBalanceTechh/LifeBalanceTechh.github.io/blob/main/insta.png)
 ![](https://github.com/LifeBalanceTechh/LifeBalanceTechh.github.io/blob/main/t.jpg)
 ![](https://github.com/LifeBalanceTechh/LifeBalanceTechh.github.io/blob/main/funes.pdf)
+![](https://github.com/LifeBalanceTechh/LifeBalanceTechh.github.io/blob/main/claudio.jpeg)
