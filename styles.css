@@ -197,6 +197,21 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    position: relative;
-    z-index: 2;
+    gap: 10px; /* Espacio entre cada ícono */
+}
+
+.social-links a {
+    display: inline-block;
+    width: 32px; /* Tamaño original del ícono */
+    height: 32px; /* Tamaño original del ícono */
+    transition: transform 0.3s ease; /* Efecto de animación */
+}
+
+.social-links a img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    height: 100%; /* Imagen ajustada al contenedor */
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Escala para agrandar en hover */
 }
