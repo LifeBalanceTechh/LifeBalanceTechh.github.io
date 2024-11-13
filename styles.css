@@ -110,9 +110,8 @@ footer {
     text-decoration: underline;
 }
 
-/* Contenedor del PDF */
 .pdf-container {
-    margin-top: 20px; /* Espacio entre el PDF y otros elementos */
+    margin-top: 20px; 
     border: 2px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -197,21 +196,21 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 10px; /* Espacio entre cada ícono */
+    gap: 10px;
 }
 
 .social-links a {
     display: inline-block;
-    width: 32px; /* Tamaño original del ícono */
-    height: 32px; /* Tamaño original del ícono */
-    transition: transform 0.3s ease; /* Efecto de animación */
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease; 
 }
 
 .social-links a img {
-    width: 100%; /* Imagen ajustada al contenedor */
-    height: 100%; /* Imagen ajustada al contenedor */
+    width: 100%; 
+    height: 100%;
 }
 
 .social-links a:hover {
-    transform: scale(1.1); /* Escala para agrandar en hover */
+    transform: scale(1.1);
 }
