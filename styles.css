@@ -6,7 +6,19 @@ body {
     background-color: #333333;
     overflow-x: hidden;
 }
-  
+.contenedor-principal {
+    max-width: 100vw;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton {
+    width: 100%;
+    max-width: 400px; 
+    margin: 8px 0; 
+}
   .container {
     width: 90%;
     margin: 0 auto;
